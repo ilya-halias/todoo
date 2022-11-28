@@ -1,4 +1,4 @@
-// window.addEventListener("load", () => {
+
 const form = document.querySelector("#new-task-form");
 const input = document.querySelector("#new-task-input");
 const list_el = document.querySelector("#tasks");
@@ -91,14 +91,14 @@ const checkTask = () => {
         const checkId = e.target.getAttribute("data-check")
         let taskId = todoList.find(item => item.id === +checkId )
         if (taskId){
+
+
             taskId.checked = !taskId.checked
         }
         localStorage.setItem("tasks" , JSON.stringify(todoList))
-        // renderTodos()
     })}
 
 checkTask()
-// renderTodos()
 
 const importantTask = () =>{
 list_el.addEventListener("contextmenu",  (e) => {
@@ -134,10 +134,8 @@ const tasksCompleted = () => {
         todoList = todoList.filter(todo => todo.checked === true )
 
         renderTodos(todoList)
-    } else
-    todoList = JSON.parse(localStorage.getItem("tasks"))
-    renderTodos(todoList)
-})
+
+}})
 }
 tasksCompleted()
 
