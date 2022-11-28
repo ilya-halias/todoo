@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script  type="module" src = "script.js"></script>
+    <script type="module" src ="theme.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+<header>
+    <button class = "completedTasks" type="submit">completedTasks</button>
+    <button class = "importantTasks" type="submit">importantTasks</button>
+    <h1>TAsk List</h1>
+    <form id="new-task-form">
+        <input
+                type="text"
+                id="new-task-input"
+                placeholder="Enter the task">
+        <input
+        type="submit"
+        id="new-task-submit"
+        value="Add Task"
+        >
+    </form>
+    <form method="get">
+
+    <input class="search" placeholder="Search">
+    </form>
+</header>
+<main>
+    <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id ="tasks">
+<!--            <div class="task">-->
+<!--                <div class="content">-->
+<!--                    <input-->
+<!--                    type="text"-->
+<!--                    class="text"-->
+<!--                    value="Погулять с собакой " readonly-->
+
+<!--                    />-->
+<!--                </div>-->
+<!--                <div class ="actions">-->
+<!--                    <button class="edit">Edit</button>-->
+<!--                    <button class = "delete">Delete</button>-->
+
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </section>
+</main>
+</body>
+</html>
